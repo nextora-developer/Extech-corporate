@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Maintenance | Extech Studio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Partial -->
+    <div id="site-header"></div>
+
+    <main>
+
+        <!-- HERO -->
+        <section
+            class="relative pb-16 md:pb-24 pt-28 md:pt-36 px-8 bg-[#0a0a0a] overflow-hidden border-b border-white/5">
+
+            <!-- Grid Background -->
+            <div class="absolute inset-0 opacity-20" style="background-image:
+                linear-gradient(to right, #1e293b 1px, transparent 1px),
+                linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+                background-size: 70px 70px;">
+            </div>
+
+            <!-- Glow -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[520px]
+                bg-cyan-500/10 blur-[140px] rounded-full pointer-events-none">
+            </div>
+
+            <div class="max-w-6xl mx-auto relative z-10">
+                <div class="grid md:grid-cols-12 gap-12 lg:gap-20 items-center">
+
+                    <div class="md:col-span-7 reveal" style="transition-delay:120ms;">
+                        <div class="inline-flex items-center gap-3 px-3 py-1.5 rounded-sm
+                            border border-cyan-500/20 bg-cyan-500/5 mb-10
+                            shadow-[0_0_15px_rgba(6,182,212,0.1)]">
+                            <span class="relative flex h-2 w-2">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                            </span>
+                            <span class="mono text-[10px] uppercase tracking-[0.3em] text-cyan-400">
+                                Service_Detail // Web_Maintenance
+                            </span>
+                        </div>
+
+                        <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-[0.95]">
+                            <span class="text-white">WEBSITE</span><br>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600">
+                                MAINTENANCE
+                            </span>
+                        </h1>
+
+                        <p class="mt-8 text-gray-400 text-lg md:text-xl leading-relaxed font-light max-w-xl">
+                            Keep your site <span
+                                class="text-white font-medium border-b border-cyan-500/30">secure</span>,
+                            <span class="text-white font-medium border-b border-cyan-500/30">fast</span>,
+                            and <span class="text-white font-medium border-b border-cyan-500/30">reliable</span>.
+                            We handle updates, monitoring, fixes, and ongoing improvements — so you can focus on
+                            business.
+                        </p>
+
+                        <div class="mt-10 flex flex-wrap gap-3">
+                            <a href="#pricing"
+                                class="px-6 py-3 bg-cyan-500 text-black font-black uppercase tracking-[0.2em] text-xs hover:-translate-y-0.5 transition">
+                                View Packages
+                            </a>
+                            <a href="/contact.html"
+                                class="px-6 py-3 bg-white/5 border border-white/10 text-white font-bold uppercase tracking-[0.2em] text-xs hover:bg-white/10 transition">
+                                Talk to Us →
+                            </a>
+                        </div>
+
+                        <div
+                            class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/5 border border-white/10 max-w-xl">
+                            <div class="bg-[#0f0f0f] p-5">
+                                <p class="mono text-[11px] text-cyan-500 uppercase tracking-[0.35em]">Monitoring</p>
+                                <p class="text-gray-400 text-sm mt-2">Uptime checks + issue alerts</p>
+                            </div>
+                            <div class="bg-[#0f0f0f] p-5">
+                                <p class="mono text-[11px] text-cyan-500 uppercase tracking-[0.35em]">Security</p>
+                                <p class="text-gray-400 text-sm mt-2">Patch & protect vulnerabilities</p>
+                            </div>
+                            <div class="bg-[#0f0f0f] p-5">
+                                <p class="mono text-[11px] text-cyan-500 uppercase tracking-[0.35em]">Performance</p>
+                                <p class="text-gray-400 text-sm mt-2">Speed tuning & fixes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Preview -->
+                    <div class="md:col-span-5 reveal relative group" style="transition-delay:240ms;">
+                        <div
+                            class="absolute -inset-10 bg-cyan-500/10 blur-[100px] rounded-full pointer-events-none opacity-50 group-hover:opacity-100 transition-opacity duration-700">
+                        </div>
+
+                        <div
+                            class="relative z-10 bg-[#0f0f0f] border border-white/10 rounded-sm overflow-hidden shadow-2xl">
+                            <div
+                                class="px-4 py-3 border-b border-white/10 bg-white/[0.03] flex justify-between items-center">
+                                <div class="flex gap-1.5">
+                                    <div class="w-2 h-2 rounded-full bg-white/10"></div>
+                                    <div class="w-2 h-2 rounded-full bg-white/10"></div>
+                                    <div class="w-2 h-2 rounded-full bg-white/10"></div>
+                                </div>
+                                <div class="mono text-[8px] text-gray-500 uppercase tracking-[0.3em]">System_Status //
+                                    OK</div>
+                            </div>
+
+                            <div class="p-8">
+                                <div class="flex items-center justify-between">
+                                    <p class="mono text-[10px] text-gray-500 uppercase tracking-[0.35em]">Uptime</p>
+                                    <span class="mono text-[10px] text-cyan-400 uppercase tracking-widest">99.9%</span>
+                                </div>
+
+                                <div class="mt-4 h-2 bg-white/5 overflow-hidden">
+                                    <div class="h-full w-[92%] bg-gradient-to-r from-cyan-500 to-blue-600"></div>
+                                </div>
+
+                                <div class="mt-8 grid grid-cols-1 gap-4">
+                                    <div class="border border-white/10 bg-white/[0.02] p-5">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-white font-bold">Weekly Updates</p>
+                                            <span class="mono text-[10px] text-gray-600 uppercase">PATCH</span>
+                                        </div>
+                                        <p class="text-gray-500 text-sm mt-2">Plugin / framework updates + compatibility
+                                            checks</p>
+                                    </div>
+
+                                    <div class="border border-white/10 bg-white/[0.02] p-5">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-white font-bold">Bug Fix Support</p>
+                                            <span class="mono text-[10px] text-gray-600 uppercase">HOTFIX</span>
+                                        </div>
+                                        <p class="text-gray-500 text-sm mt-2">Fix layout issues, broken links, small UI
+                                            bugs</p>
+                                    </div>
+
+                                    <div class="border border-white/10 bg-white/[0.02] p-5">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-white font-bold">Backup & Restore</p>
+                                            <span class="mono text-[10px] text-gray-600 uppercase">SAFE</span>
+                                        </div>
+                                        <p class="text-gray-500 text-sm mt-2">Snapshot backups + restore assistance</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
+                                    <span
+                                        class="mono text-[10px] text-gray-600 uppercase tracking-widest">Response</span>
+                                    <span class="mono text-[10px] text-cyan-400 uppercase tracking-widest">Fast
+                                        (SLA-based)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="absolute -right-4 -bottom-4 z-20 hidden lg:block animate-bounce">
+                            <div class="bg-cyan-500 text-black px-4 py-2 rounded-sm shadow-xl">
+                                <p class="mono text-[10px] font-black uppercase tracking-tighter italic">
+                                    Always_Online
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY MAINTENANCE -->
+        <section class="py-20 px-8 bg-[#0a0a0a] relative overflow-hidden">
+            <div class="absolute inset-0 opacity-[0.05] pointer-events-none"
+                style="background-image: radial-gradient(#06b6d4 1px, transparent 1px); background-size: 32px 32px;">
+            </div>
+
+            <div class="max-w-6xl mx-auto relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12 items-start">
+
+                    <div class="lg:col-span-6 reveal">
+                        <span class="mono text-cyan-500 uppercase tracking-[0.4em] text-xs font-black block mb-4">
+                            // WHY_IT_MATTERS
+                        </span>
+                        <h2 class="text-4xl md:text-5xl font-black text-white tracking-tighter leading-none">
+                            Maintenance prevents
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-500">
+                                downtime & risk.
+                            </span>
+                        </h2>
+                        <p class="mt-6 text-gray-400 text-base md:text-lg leading-relaxed font-light max-w-xl">
+                            Websites aren’t “set and forget”. Updates, security patches, backups, and performance tuning
+                            keep everything stable — especially when traffic grows.
+                        </p>
+
+                        <div class="mt-10 space-y-4">
+                            <div class="border border-white/10 bg-white/[0.02] p-6">
+                                <p class="mono text-[10px] text-cyan-500 uppercase tracking-[0.35em]">Security</p>
+                                <p class="text-gray-400 mt-2 text-sm leading-relaxed">
+                                    Outdated plugins / CMS / server packages are common attack points. Regular patching
+                                    reduces
+                                    vulnerabilities.
+                                </p>
+                            </div>
+                            <div class="border border-white/10 bg-white/[0.02] p-6">
+                                <p class="mono text-[10px] text-cyan-500 uppercase tracking-[0.35em]">Reliability</p>
+                                <p class="text-gray-400 mt-2 text-sm leading-relaxed">
+                                    Broken forms, expired SSL, or server issues can silently kill leads. Monitoring
+                                    catches this early.
+                                </p>
+                            </div>
+                            <div class="border border-white/10 bg-white/[0.02] p-6">
+                                <p class="mono text-[10px] text-cyan-500 uppercase tracking-[0.35em]">Performance</p>
+                                <p class="text-gray-400 mt-2 text-sm leading-relaxed">
+                                    Slow sites lose conversions. We optimize load speed, images, caching, and fix
+                                    bottlenecks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 reveal" style="transition-delay:150ms;">
+                        <div class="bg-[#0f0f0f] border border-white/10 p-10 shadow-2xl">
+                            <div class="flex items-center justify-between">
+                                <p class="mono text-[10px] text-gray-600 uppercase tracking-[0.35em]">Typical Issues</p>
+                                <span class="mono text-[10px] text-cyan-400 uppercase tracking-widest">Prevention</span>
+                            </div>
+
+                            <div class="mt-8 space-y-6">
+                                <div class="flex items-start gap-4">
+                                    <span class="w-2 h-2 bg-cyan-500 rotate-45 mt-2"></span>
+                                    <div>
+                                        <p class="text-white font-bold">Site down / errors</p>
+                                        <p class="text-gray-500 text-sm mt-1">Uptime monitoring + quick fixes.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <span class="w-2 h-2 bg-cyan-500/70 rotate-45 mt-2"></span>
+                                    <div>
+                                        <p class="text-white font-bold">Security breaches</p>
+                                        <p class="text-gray-500 text-sm mt-1">Patch updates + hardening + backups.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <span class="w-2 h-2 bg-cyan-500/50 rotate-45 mt-2"></span>
+                                    <div>
+                                        <p class="text-white font-bold">Slow load speed</p>
+                                        <p class="text-gray-500 text-sm mt-1">Caching, image optimization, cleanup.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <span class="w-2 h-2 bg-cyan-500/30 rotate-45 mt-2"></span>
+                                    <div>
+                                        <p class="text-white font-bold">Broken forms / leads lost</p>
+                                        <p class="text-gray-500 text-sm mt-1">Monthly checks + fixes for key flows.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-10 pt-8 border-t border-white/10 flex items-center justify-between">
+                                <span class="mono text-[10px] text-gray-600 uppercase tracking-widest">Result</span>
+                                <span class="mono text-[10px] text-cyan-400 uppercase tracking-widest">Stable
+                                    Growth</span>
+                            </div>
+                        </div>
+
+                        <a href="#pricing"
+                            class="group mt-6 flex items-center justify-between p-5 bg-cyan-500/10 border border-cyan-500/20 hover:bg-cyan-500 transition-all duration-300">
+                            <span
+                                class="mono text-xs font-black uppercase tracking-[0.2em] text-cyan-400 group-hover:text-black">
+                                Choose a Plan
+                            </span>
+                            <span
+                                class="text-cyan-400 group-hover:text-black group-hover:translate-x-1 transition-transform">
+                                →
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING PACKAGES -->
+        <section id="pricing" class="py-24 px-8 bg-[#0a0a0a] border-y border-white/5 relative overflow-hidden">
+
+            <!-- Subtle grid -->
+            <div class="absolute inset-0 opacity-[0.08] pointer-events-none" style="background-image:
+        linear-gradient(to right, #1e293b 1px, transparent 1px),
+        linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+        background-size: 80px 80px;">
+            </div>
+
+            <!-- Glow -->
+            <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[520px]
+        bg-cyan-500/10 blur-[140px] rounded-full pointer-events-none">
+            </div>
+
+            <div class="max-w-6xl mx-auto relative z-10">
+
+                <!-- Heading -->
+                <div class="reveal mb-16">
+                    <span class="mono text-cyan-500 uppercase tracking-[0.4em] text-sm font-black block mb-4">
+                        // PRICING
+                    </span>
+                    <h2 class="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase leading-none">
+                        Maintenance <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">Plans</span>
+                    </h2>
+                    <p class="mt-6 text-gray-500 max-w-2xl text-sm md:text-base leading-relaxed font-light">
+                        Choose a plan based on your site type and how fast you need support. Final scope confirmed
+                        before starting.
+                    </p>
+                </div>
+
+                <!-- Cards (2 only) -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                    <div
+                        class="reveal group relative bg-[#0f0f0f] border border-white/10 hover:border-white/20 transition-colors overflow-hidden">
+                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                            style="background: radial-gradient(800px 240px at 30% 0%, rgba(6,182,212,0.10), transparent 60%);">
+                        </div>
+
+                        <div class="p-10 relative z-10">
+                            <div class="flex items-start justify-between mb-10">
+                                <div>
+                                    <p class="mono text-[10px] text-gray-600 tracking-[0.35em] uppercase">Tier_01</p>
+                                    <h3 class="text-2xl font-black text-white mt-3 tracking-tight">Website Maintenance
+                                        (Yearly)</h3>
+                                </div>
+                                <span
+                                    class="mono text-[10px] text-cyan-400 uppercase tracking-widest border border-cyan-500/20 bg-cyan-500/5 px-2 py-1">
+                                    Yearly
+                                </span>
+                            </div>
+
+                            <div class="flex items-end gap-2 mb-4">
+                                <span class="text-4xl font-black tracking-tight text-white">RM 1,000 – 1,200</span>
+                                <span class="mono text-[10px] text-gray-600 uppercase tracking-widest mb-1">/
+                                    year</span>
+                            </div>
+
+                            <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                                Suitable for low-maintenance websites
+                            </p>
+
+                            <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                                For static or low-activity websites that rarely change — keep your site stable, secure
+                                and monitored.
+                            </p>
+
+                            <div class="pt-8 border-t border-white/5">
+                                <p class="mono text-[10px] text-gray-500 uppercase tracking-[0.35em] mb-4">What’s
+                                    included</p>
+
+                                <div class="space-y-3 text-sm text-gray-400">
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/70 rotate-45"></span>
+                                        <span>Basic security checks</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/60 rotate-45"></span>
+                                        <span>Minor bug fixes</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/50 rotate-45"></span>
+                                        <span>Basic performance monitoring</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/40 rotate-45"></span>
+                                        <span>Site uptime checks</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/35 rotate-45"></span>
+                                        <span>Limited technical support</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/30 rotate-45"></span>
+                                        <span>6 content items / year (text edit, image replacement, link update)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-10 pt-8 border-t border-white/5">
+                                <p class="mono text-[10px] text-gray-500 uppercase tracking-[0.35em] mb-4">What’s not
+                                    included
+                                </p>
+
+                                <div class="space-y-3 text-sm text-gray-400">
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/30 rotate-45"></span>
+                                        <span>Regular content updates</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/25 rotate-45"></span>
+                                        <span>Design changes or new sections</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/20 rotate-45"></span>
+                                        <span>New features / system improvements</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/20 rotate-45"></span>
+                                        <span>Priority response time</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-10 pt-8 border-t border-white/5 flex items-center justify-between">
+                                <span class="mono text-[9px] text-gray-700 uppercase tracking-widest">ETA: 5–7
+                                    days</span>
+                                <a href="/contact.html"
+                                    class="mono text-[10px] font-black uppercase tracking-[0.2em] text-cyan-400 hover:text-white transition-colors">
+                                    Enquire →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CORPORATE WEBSITE -->
+                    <div class="reveal group relative bg-[#0f0f0f] border border-white/10 hover:border-white/20 transition-colors overflow-hidden"
+                        style="transition-delay:120ms;">
+
+                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                            style="background: radial-gradient(800px 240px at 70% 0%, rgba(6,182,212,0.10), transparent 60%);">
+                        </div>
+
+                        <div class="p-10 relative z-10">
+                            <div class="flex items-start justify-between mb-10">
+                                <div>
+                                    <p class="mono text-[10px] text-gray-600 tracking-[0.35em] uppercase">Tier_02</p>
+                                    <h3 class="text-2xl font-black text-white mt-3 tracking-tight">Monthly Retainer
+                                    </h3>
+                                </div>
+                                <span
+                                    class="mono text-[10px] text-cyan-400 uppercase tracking-widest border border-cyan-500/20 bg-cyan-500/5 px-2 py-1">
+                                    Monthly
+                                </span>
+                            </div>
+
+                            <div class="flex items-end gap-2 mb-4">
+                                <span class="text-4xl font-black tracking-tight text-white">RM 300 – 800</span>
+                                <span class="mono text-[10px] text-gray-600 uppercase tracking-widest mb-1">/
+                                    month</span>
+                            </div>
+
+                            <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                                Price depends on support level & update frequency
+                            </p>
+
+                            <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                                For businesses that update content regularly or need continuous technical support and
+                                faster response.
+                            </p>
+
+                            <div class="pt-8 border-t border-white/5">
+                                <p class="mono text-[10px] text-gray-500 uppercase tracking-[0.35em] mb-4">What’s
+                                    included</p>
+
+                                <div class="space-y-3 text-sm text-gray-400">
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/70 rotate-45"></span>
+                                        <span>Ongoing technical support</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/60 rotate-45"></span>
+                                        <span>Content updates (text, images, banners)</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/50 rotate-45"></span>
+                                        <span>Minor design adjustments</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/40 rotate-45"></span>
+                                        <span>Bug fixes & troubleshooting</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/35 rotate-45"></span>
+                                        <span>Priority response time</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/30 rotate-45"></span>
+                                        <span>Advice on improvements & optimisations</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-10 pt-8 border-t border-white/5">
+                                <p class="mono text-[10px] text-gray-500 uppercase tracking-[0.35em] mb-4">What’s not
+                                    included
+                                </p>
+
+                                <div class="space-y-3 text-sm text-gray-400">
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/30 rotate-45"></span>
+                                        <span>Major redesigns</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1.5 h-1.5 bg-cyan-500/25 rotate-45"></span>
+                                        <span>Large feature development (quoted separately)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-10 pt-8 border-t border-white/5 flex items-center justify-between">
+                                <span class="mono text-[9px] text-gray-700 uppercase tracking-widest">ETA: 10–14
+                                    days</span>
+                                <a href="/contact.html"
+                                    class="mono text-[10px] font-black uppercase tracking-[0.2em] text-cyan-400 hover:text-white transition-colors">
+                                    Enquire →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Notes -->
+                <div class="mt-14 flex items-center justify-center gap-4 reveal" style="transition-delay:300ms;">
+                    <div class="h-[1px] w-12 bg-white/10"></div>
+                    <p class="mono text-[11px] text-white-700 uppercase tracking-[0.4em] text-center">
+                        Maintenance scope depends on your website type. Major redesigns and large feature work are
+                        quoted separately.
+                    </p>
+                    <div class="h-[1px] w-12 bg-white/10"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="py-24 px-8 bg-[#0a0a0a] relative overflow-hidden">
+
+            <!-- Debug text (decorative) -->
+            <div
+                class="absolute top-10 right-10 mono text-[10px] text-white/5 select-none pointer-events-none hidden lg:block">
+                <p>GET /support/maintenance/faq</p>
+                <p>Status: 200 OK</p>
+                <p>Cache-Control: no-cache</p>
+            </div>
+
+            <div class="max-w-6xl mx-auto relative z-10">
+
+                <!-- Heading -->
+                <div class="reveal mb-16">
+                    <span class="mono text-cyan-500 uppercase tracking-[0.4em] text-sm font-black block mb-4">
+                        // KNOWLEDGE_BASE
+                    </span>
+                    <h2 class="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase leading-none">
+                        Maintenance <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-600">FAQ</span>
+                    </h2>
+                    <p class="mt-6 text-gray-500 max-w-2xl text-sm md:text-base leading-relaxed font-light">
+                        Common questions about our website maintenance service, response time, and what’s included.
+                    </p>
+                </div>
+
+                <!-- FAQ Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+
+                    <!-- FAQ 1 -->
+                    <div
+                        class="group border-l border-white/10 pl-8 py-2 hover:border-cyan-500 transition-colors reveal">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="mono text-[10px] text-cyan-500 font-bold">[Q]</span>
+                            <h3 class="text-white font-bold tracking-wide">
+                                Why do websites need ongoing maintenance?
+                            </h3>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="mono text-[10px] text-gray-700 mt-1">[A]</span>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Websites rely on software, servers, and integrations that change over time. Without
+                                maintenance,
+                                security risks, broken features, and performance issues can slowly appear and affect
+                                your business.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-4 mono text-[8px] text-gray-800 uppercase tracking-widest group-hover:text-cyan-900 transition-colors">
+                            Status: Preventive_Care
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="group border-l border-white/10 pl-8 py-2 hover:border-cyan-500 transition-colors reveal"
+                        style="transition-delay:100ms;">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="mono text-[10px] text-cyan-500 font-bold">[Q]</span>
+                            <h3 class="text-white font-bold tracking-wide">
+                                What is included in a maintenance plan?
+                            </h3>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="mono text-[10px] text-gray-700 mt-1">[A]</span>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Maintenance typically includes updates, backups, monitoring, small fixes, and basic
+                                performance
+                                checks. The exact scope depends on the plan you choose.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-4 mono text-[8px] text-gray-800 uppercase tracking-widest group-hover:text-cyan-900 transition-colors">
+                            Status: Scope_Defined
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="group border-l border-white/10 pl-8 py-2 hover:border-cyan-500 transition-colors reveal"
+                        style="transition-delay:200ms;">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="mono text-[10px] text-cyan-500 font-bold">[Q]</span>
+                            <h3 class="text-white font-bold tracking-wide">
+                                How fast do you respond to issues?
+                            </h3>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="mono text-[10px] text-gray-700 mt-1">[A]</span>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Response time depends on your maintenance tier. Basic plans are handled within 48 hours,
+                                while
+                                higher-tier plans receive faster, priority-based support.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-4 mono text-[8px] text-gray-800 uppercase tracking-widest group-hover:text-cyan-900 transition-colors">
+                            Status: SLA_Based
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="group border-l border-white/10 pl-8 py-2 hover:border-cyan-500 transition-colors reveal"
+                        style="transition-delay:300ms;">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="mono text-[10px] text-cyan-500 font-bold">[Q]</span>
+                            <h3 class="text-white font-bold tracking-wide">
+                                Can you maintain websites not built by Extech Studio?
+                            </h3>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="mono text-[10px] text-gray-700 mt-1">[A]</span>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Yes. We can maintain most websites after an initial review to understand the technology
+                                stack,
+                                hosting environment, and current condition.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-4 mono text-[8px] text-gray-800 uppercase tracking-widest group-hover:text-cyan-900 transition-colors">
+                            Status: Review_Required
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="group border-l border-white/10 pl-8 py-2 hover:border-cyan-500 transition-colors reveal"
+                        style="transition-delay:400ms;">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="mono text-[10px] text-cyan-500 font-bold">[Q]</span>
+                            <h3 class="text-white font-bold tracking-wide">
+                                Does maintenance include new features or redesign?
+                            </h3>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="mono text-[10px] text-gray-700 mt-1">[A]</span>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Maintenance focuses on keeping your site stable and secure. Larger changes, redesigns,
+                                or new
+                                features are usually handled as separate projects.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-4 mono text-[8px] text-gray-800 uppercase tracking-widest group-hover:text-cyan-900 transition-colors">
+                            Status: Project_Based
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="group border-l border-white/10 pl-8 py-2 hover:border-cyan-500 transition-colors reveal"
+                        style="transition-delay:500ms;">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="mono text-[10px] text-cyan-500 font-bold">[Q]</span>
+                            <h3 class="text-white font-bold tracking-wide">
+                                Is there a minimum commitment period?
+                            </h3>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="mono text-[10px] text-gray-700 mt-1">[A]</span>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Most maintenance plans are billed monthly. Long-term commitments are optional and may
+                                come with
+                                discounted pricing.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-4 mono text-[8px] text-gray-800 uppercase tracking-widest group-hover:text-cyan-900 transition-colors">
+                            Status: Flexible
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CTA -->
+        <section class="py-20 px-8 bg-[#0a0a0a]">
+            <div class="max-w-6xl mx-auto">
+                <div
+                    class="reveal bg-[#0f0f0f] border border-white/10 p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                    <div>
+                        <p class="mono text-xs text-cyan-500 uppercase tracking-[0.35em]">Secure Channel</p>
+                        <h3 class="text-2xl md:text-3xl font-black text-white mt-3 tracking-tight">Need a custom
+                            maintenance scope?</h3>
+                        <p class="text-gray-500 mt-3 max-w-2xl text-sm leading-relaxed">
+                            Tell us your website type, hosting provider, and what problems you face — we’ll recommend
+                            the best plan.
+                        </p>
+                    </div>
+                    <a href="/contact.html"
+                        class="px-8 py-4 bg-cyan-500 text-black font-black uppercase tracking-[0.2em] text-xs hover:-translate-y-0.5 transition">
+                        Contact Us →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Partial -->
+    <div id="site-footer"></div>
+
+    <!-- Main JS (partials + animations) -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

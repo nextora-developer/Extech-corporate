@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Extech Studio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Partial -->
+    <div id="site-header"></div>
+
+    <main>
+
+        <!-- HERO -->
+        <section
+            class="relative pb-16 md:pb-24 pt-28 md:pt-36 px-8 bg-[#0a0a0a] overflow-hidden border-b border-white/5">
+
+            <!-- Grid Background -->
+            <div class="absolute inset-0 opacity-20" style="background-image:
+                linear-gradient(to right, #1e293b 1px, transparent 1px),
+                linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+                background-size: 70px 70px;">
+            </div>
+
+            <!-- Glow -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[520px]
+                bg-cyan-500/10 blur-[140px] rounded-full pointer-events-none">
+            </div>
+
+            <div class="max-w-6xl mx-auto relative z-10">
+
+                <div class="grid md:grid-cols-12 gap-12 lg:gap-20 items-end">
+
+                    <div class="md:col-span-8 reveal" style="transition-delay:120ms;">
+                        <div class="inline-flex items-center gap-3 px-3 py-1.5 rounded-sm
+                            border border-cyan-500/20 bg-cyan-500/5 mb-10
+                            shadow-[0_0_15px_rgba(6,182,212,0.1)]">
+                            <span class="relative flex h-2 w-2">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                            </span>
+                            <span class="mono text-[10px] uppercase tracking-[0.3em] text-cyan-400">
+                                Work_Log // Portfolio
+                            </span>
+                        </div>
+
+                        <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-[0.95]">
+                            <span class="text-white">SELECTED</span><br>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600">
+                                PROJECTS
+                            </span>
+                        </h1>
+
+                        <p class="mt-8 text-gray-400 text-lg md:text-xl leading-relaxed font-light max-w-2xl">
+                            A snapshot of what we build — landing pages, corporate websites, and ecommerce experiences.
+                            Each project is engineered for <span
+                                class="text-white font-medium border-b border-cyan-500/30">clarity</span>,
+                            <span class="text-white font-medium border-b border-cyan-500/30">performance</span> and
+                            <span class="text-white font-medium border-b border-cyan-500/30">conversion</span>.
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-4 reveal" style="transition-delay:220ms;">
+                        <div class="bg-[#0f0f0f] border border-white/10 p-8 shadow-2xl">
+                            <p class="mono text-[10px] text-gray-500 uppercase tracking-[0.35em]">Snapshot</p>
+
+                            <div class="mt-6 grid grid-cols-3 gap-px bg-white/5 border border-white/10">
+                                <div class="bg-[#0b0b0b] p-4 text-center">
+                                    <p class="text-white text-xl font-black">20+</p>
+                                    <p class="mono text-[9px] text-gray-600 uppercase tracking-widest mt-1">Launches</p>
+                                </div>
+                                <div class="bg-[#0b0b0b] p-4 text-center">
+                                    <p class="text-white text-xl font-black">5–14</p>
+                                    <p class="mono text-[9px] text-gray-600 uppercase tracking-widest mt-1">Days</p>
+                                </div>
+                                <div class="bg-[#0b0b0b] p-4 text-center">
+                                    <p class="text-white text-xl font-black">99%</p>
+                                    <p class="mono text-[9px] text-gray-600 uppercase tracking-widest mt-1">Clean UI</p>
+                                </div>
+                            </div>
+
+                            <a href="/contact.html"
+                                class="mt-8 group flex items-center justify-between p-4 bg-cyan-500/10 border border-cyan-500/20 hover:bg-cyan-500 transition-all duration-300">
+                                <span
+                                    class="mono text-xs font-black uppercase tracking-[0.2em] text-cyan-400 group-hover:text-black">
+                                    Start a Project
+                                </span>
+                                <span
+                                    class="text-cyan-400 group-hover:text-black group-hover:translate-x-1 transition-transform">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FILTER + GRID -->
+        <section class="py-20 px-8 bg-[#0a0a0a] relative overflow-hidden">
+            <div class="absolute inset-0 opacity-[0.06] pointer-events-none"
+                style="background-image: radial-gradient(#06b6d4 1px, transparent 1px); background-size: 30px 30px;">
+            </div>
+
+            <div class="max-w-6xl mx-auto relative z-10">
+
+                <!-- Filter Tabs -->
+                <div class="reveal flex flex-wrap items-center justify-between gap-4 mb-10">
+                    <div class="flex flex-wrap gap-2">
+                        <button data-filter="all"
+                            class="filter-btn px-4 py-2 rounded-sm bg-cyan-500/15 border border-cyan-500/25 text-cyan-300 hover:bg-cyan-500/25 transition mono text-[10px] uppercase tracking-[0.25em]">
+                            All
+                        </button>
+                        <button data-filter="landing"
+                            class="filter-btn px-4 py-2 rounded-sm bg-white/5 border border-white/10 text-gray-200 hover:text-white hover:bg-white/10 transition mono text-[10px] uppercase tracking-[0.25em]">
+                            Landing
+                        </button>
+                        <button data-filter="corporate"
+                            class="filter-btn px-4 py-2 rounded-sm bg-white/5 border border-white/10 text-gray-200 hover:text-white hover:bg-white/10 transition mono text-[10px] uppercase tracking-[0.25em]">
+                            Corporate
+                        </button>
+                        <button data-filter="ecommerce"
+                            class="filter-btn px-4 py-2 rounded-sm bg-white/5 border border-white/10 text-gray-200 hover:text-white hover:bg-white/10 transition mono text-[10px] uppercase tracking-[0.25em]">
+                            Ecommerce
+                        </button>
+                        <button data-filter="system"
+                            class="filter-btn px-4 py-2 rounded-sm bg-white/5 border border-white/10 text-gray-200 hover:text-white hover:bg-white/10 transition mono text-[10px] uppercase tracking-[0.25em]">
+                            System
+                        </button>
+                    </div>
+
+                    <div class="mono text-[10px] uppercase tracking-[0.35em] text-gray-600">
+                        Tip: Click a card for details
+                    </div>
+                </div>
+
+                <!-- Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Card 1 -->
+                    <a href="/contact.html" data-type="landing"
+                        class="project-card reveal group bg-[#0f0f0f] border border-white/10 hover:border-cyan-500/30 transition-colors overflow-hidden"
+                        style="transition-delay:80ms;">
+                        <div class="relative aspect-[16/10] overflow-hidden bg-black">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                                style="background: radial-gradient(600px 220px at 30% 0%, rgba(6,182,212,0.18), transparent 60%);">
+                            </div>
+                            <img src="/images/portfolio/applecarteam.png" alt="Project Preview"
+                                class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition duration-1000 ease-out" />
+                            <div class="absolute top-3 left-3">
+                                <span
+                                    class="mono text-[9px] uppercase tracking-[0.35em] text-cyan-300 bg-black/60 border border-white/10 px-2 py-1">
+                                    Landing
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-7">
+                            <p class="mono text-[9px] text-gray-600 uppercase tracking-[0.35em]">Case_01</p>
+                            <h3 class="text-white text-xl font-black mt-3 tracking-tight">Apple Car Team</h3>
+                            <p class="text-gray-500 text-sm mt-3 leading-relaxed">
+                                Executive protection and professional driver services presented with a clear,
+                                trust-driven layout and fast enquiry flow.
+                            </p>
+                            <div class="mt-6 pt-5 border-t border-white/10 flex items-center justify-between">
+                                <span class="mono text-[9px] text-gray-700 uppercase tracking-widest">Stack:
+                                    HTML/Tailwind</span>
+                                <span class="mono text-[10px] text-cyan-400 font-black uppercase tracking-widest">
+                                    View →
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="/contact.html" data-type="corporate"
+                        class="project-card reveal group bg-[#0f0f0f] border border-white/10 hover:border-cyan-500/30 transition-colors overflow-hidden"
+                        style="transition-delay:140ms;">
+                        <div class="relative aspect-[16/10] overflow-hidden bg-black">
+                            <img src="/images/portfolio/br-corporate.png" alt="Project Preview"
+                                class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition duration-1000 ease-out" />
+                            <div class="absolute top-3 left-3">
+                                <span
+                                    class="mono text-[9px] uppercase tracking-[0.35em] text-gray-200 bg-black/60 border border-white/10 px-2 py-1">
+                                    Corporate
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-7">
+                            <p class="mono text-[9px] text-gray-600 uppercase tracking-[0.35em]">Case_02</p>
+                            <h3 class="text-white text-xl font-black mt-3 tracking-tight">BR Innovate Future</h3>
+                            <p class="text-gray-500 text-sm mt-3 leading-relaxed">
+                                A structured corporate site showcasing multiple services under one platform, designed
+                                for clarity, credibility, and scalability.
+                            </p>
+                            <div class="mt-6 pt-5 border-t border-white/10 flex items-center justify-between">
+                                <span class="mono text-[9px] text-gray-700 uppercase tracking-widest">Stack:
+                                    Static</span>
+                                <span class="mono text-[10px] text-cyan-400 font-black uppercase tracking-widest">
+                                    View →
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="/contact.html" data-type="ecommerce"
+                        class="project-card reveal group bg-[#0f0f0f] border border-white/10 hover:border-cyan-500/30 transition-colors overflow-hidden"
+                        style="transition-delay:200ms;">
+                        <div class="relative aspect-[16/10] overflow-hidden bg-black">
+                            <img src="/images/portfolio/br-ecommerce.png" alt="Project Preview"
+                                class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition duration-1000 ease-out" />
+                            <div class="absolute top-3 left-3">
+                                <span
+                                    class="mono text-[9px] uppercase tracking-[0.35em] text-cyan-300 bg-black/60 border border-white/10 px-2 py-1">
+                                    Ecommerce
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-7">
+                            <p class="mono text-[9px] text-gray-600 uppercase tracking-[0.35em]">Case_03</p>
+                            <h3 class="text-white text-xl font-black mt-3 tracking-tight">BR Ecommerce</h3>
+                            <p class="text-gray-500 text-sm mt-3 leading-relaxed">
+                                Digital product storefront built for instant delivery, smooth checkout, and high-volume
+                                transaction handling.
+                            </p>
+
+                            <div class="mt-6 pt-5 border-t border-white/10 flex items-center justify-between">
+                                <span class="mono text-[9px] text-gray-700 uppercase tracking-widest">Stack:
+                                    Laravel</span>
+                                <span class="mono text-[10px] text-cyan-400 font-black uppercase tracking-widest">
+                                    View →
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Partial -->
+    <div id="site-footer"></div>
+
+    <!-- Main JS (partials + animations) -->
+    <script src="/js/main.js"></script>
+
+    <!-- Portfolio Filter (lightweight) -->
+    <script>
+        (function () {
+            const btns = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.project-card');
+
+            function setActive(btn) {
+                btns.forEach(b => {
+                    b.classList.remove('bg-cyan-500/15', 'border-cyan-500/25', 'text-cyan-300');
+                    b.classList.add('bg-white/5', 'border-white/10', 'text-gray-200');
+                });
+                btn.classList.remove('bg-white/5', 'border-white/10', 'text-gray-200');
+                btn.classList.add('bg-cyan-500/15', 'border-cyan-500/25', 'text-cyan-300');
+            }
+
+            function filter(type) {
+                cards.forEach(card => {
+                    const t = card.getAttribute('data-type');
+                    const show = (type === 'all' || t === type);
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+
+            btns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const type = btn.getAttribute('data-filter');
+                    setActive(btn);
+                    filter(type);
+                });
+            });
+
+            // default
+            filter('all');
+        })();
+    </script>
+
+</body>
+
+</html>

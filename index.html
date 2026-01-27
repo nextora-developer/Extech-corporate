@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extech Studio | Engineering the Future</title>
+    <title>Extech Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono&display=swap"
         rel="stylesheet">
@@ -36,16 +36,28 @@
             designed for real-world business growth.
         </p>
 
-        <div class="z-10 flex gap-4 reveal-right" style="transition-delay:220ms;">
-            <button class="bg-cyan-500 hover:bg-cyan-400 text-black px-8 py-3 font-bold transition">
-                Start a Project
-            </button>
-            <button class="border border-white/40 hover:border-white px-8 py-3 font-bold transition">
-                Our Work
-            </button>
+        <div class="z-10 flex flex-wrap items-center gap-4 reveal-right" style="transition-delay:220ms;">
+
+            <!-- Primary -->
+            <a href="/contact.html" class="group inline-flex items-center gap-3
+        bg-cyan-500/90 hover:bg-cyan-400
+        text-black font-black uppercase tracking-widest text-[11px]
+        px-8 py-3 transition-all">
+
+                Start Project
+            </a>
+
+            <!-- Secondary -->
+            <a href="/portfolio.html" class="group inline-flex items-center gap-3
+        border border-white/30 hover:border-white
+        text-white font-black uppercase tracking-widest text-[11px]
+        px-8 py-3 transition-all">
+
+                View Work
+                <span class="opacity-60 group-hover:opacity-100 transition-opacity">↗</span>
+            </a>
+
         </div>
-
-
     </section>
 
 
@@ -177,7 +189,7 @@
             <div class="flex items-end justify-between flex-wrap gap-4 mb-12">
                 <div>
                     <span class="mono text-cyan-500 uppercase tracking-widest text-sm">
-                        // 03. Selected Projects
+                        // 03. Our Projects
                     </span>
 
                     <h2 class="text-4xl font-bold mt-4">
@@ -198,51 +210,27 @@
 
                 <!-- Project 01 -->
                 <div class="relative h-72 bg-gray-800 rounded-xl overflow-hidden group">
-                    <div class="absolute inset-0 bg-cyan-900/40 opacity-0
-                            group-hover:opacity-100 transition flex items-center justify-center">
-                        <span class="font-bold tracking-wide underline">
-                            View Project
-                        </span>
-                    </div>
+                    <!-- Background Image -->
+                    <img src="/images/corporate.png" alt="Corporate Website Project" class="absolute inset-0 w-full h-full object-cover
+               transition-transform duration-700 group-hover:scale-105" />
 
                     <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
                         <h3 class="text-lg font-bold">
                             Corporate Website
                         </h3>
-                        <p class="text-xs text-gray-400 mt-1">
-                            Company profile, service pages, contact integration
-                        </p>
-
-                        <div class="flex gap-2 mt-3 text-[10px] mono uppercase tracking-widest">
-                            <span class="px-2 py-1 bg-white/10 rounded">Landing</span>
-                            <span class="px-2 py-1 bg-white/10 rounded">Brand</span>
-                            <span class="px-2 py-1 bg-white/10 rounded">CMS</span>
-                        </div>
                     </div>
                 </div>
 
                 <!-- Project 02 -->
                 <div class="relative h-72 bg-gray-800 rounded-xl overflow-hidden group">
-                    <div class="absolute inset-0 bg-cyan-900/40 opacity-0
-                            group-hover:opacity-100 transition flex items-center justify-center">
-                        <span class="font-bold tracking-wide underline">
-                            View Project
-                        </span>
-                    </div>
+
+                    <img src="/images/ecommerce.png" alt="Corporate Website Project" class="absolute inset-0 w-full h-full object-cover
+               transition-transform duration-700 group-hover:scale-105" />
 
                     <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
                         <h3 class="text-lg font-bold">
                             E-Commerce Website
                         </h3>
-                        <p class="text-xs text-gray-400 mt-1">
-                            Product catalog, checkout flow, payment integration
-                        </p>
-
-                        <div class="flex gap-2 mt-3 text-[10px] mono uppercase tracking-widest">
-                            <span class="px-2 py-1 bg-white/10 rounded">Ecommerce</span>
-                            <span class="px-2 py-1 bg-white/10 rounded">Payment</span>
-                            <span class="px-2 py-1 bg-white/10 rounded">Admin</span>
-                        </div>
                     </div>
                 </div>
             </div>

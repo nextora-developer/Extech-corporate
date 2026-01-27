@@ -48,12 +48,10 @@ injectPartial("#site-footer", "/partials/footer.html");
    Navlink Active
 ========================= */
 function applyNavActive() {
-  const currentPage = (
-    location.pathname.split("/").pop() || "index.html"
-  ).toLowerCase();
+  const path = location.pathname.toLowerCase();
 
   const links = document.querySelectorAll("[data-nav]");
-  if (!links.length) return; // header 还没插入就直接跳过
+  if (!links.length) return;
 
   links.forEach((link) => {
     // reset
@@ -63,13 +61,30 @@ function applyNavActive() {
 
     const href = (link.getAttribute("href") || "").toLowerCase();
 
-    // ✅ match (支持 / 变 index.html)
-    const isHome =
-      (location.pathname === "/" || currentPage === "") &&
-      href === "index.html";
-    const isMatch = href === currentPage || isHome;
+    // normalize
+    const linkPath = href.startsWith("/") ? href : `/${href}`;
 
-    if (isMatch) {
+    let isActive = false;
+
+    // 1️⃣ Home
+    if (
+      (path === "/" || path === "/index.html") &&
+      (linkPath === "/index.html" || linkPath === "/")
+    ) {
+      isActive = true;
+    }
+
+    // 2️⃣ Exact match
+    if (path === linkPath) {
+      isActive = true;
+    }
+
+    // 3️⃣ Services subpages → Services active
+    if (path.startsWith("/services/") && linkPath === "/services.html") {
+      isActive = true;
+    }
+
+    if (isActive) {
       link.classList.add("text-cyan-400", "relative", "font-semibold");
 
       const underline = document.createElement("span");

@@ -25,6 +25,26 @@
             background: rgba(255, 255, 255, 0.02);
             backdrop-filter: blur(12px);
         }
+
+        /* Chrome / Edge autofill fix */
+        input:-webkit-autofill,
+        textarea:-webkit-autofill,
+        select:-webkit-autofill {
+            -webkit-text-fill-color: #ffffff !important;
+            caret-color: #ffffff !important;
+            box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.4) inset !important;
+            -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.4) inset !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            transition: background-color 999999s ease-in-out 0s;
+        }
+
+        /* Firefox (optional) */
+        input:-moz-autofill,
+        textarea:-moz-autofill,
+        select:-moz-autofill {
+            box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.4) inset !important;
+            -moz-text-fill-color: #ffffff !important;
+        }
     </style>
 </head>
 
@@ -106,12 +126,12 @@
                             <span class="mono text-[9px] text-gray-700 uppercase">Input_Terminal_v2.0</span>
                         </div>
 
-                        <form class="p-8 md:p-12 space-y-8">
+                        <form id="contactWhatsAppForm" class="p-8 md:p-12 space-y-8">
                             <div class="grid md:grid-cols-2 gap-8">
                                 <div class="space-y-2">
                                     <label
                                         class="mono text-[10px] uppercase text-gray-500 tracking-widest">User_Identity</label>
-                                    <input type="text" placeholder="Full Name"
+                                    <input name="full_name" type="text" placeholder="Full Name"
                                         class="w-full bg-black/40 border border-white/10 rounded-sm px-4 py-3.5 text-white focus:border-cyan-500/50 focus:outline-none transition-all placeholder:text-gray-800">
                                 </div>
                                 <div class="space-y-2">
@@ -144,13 +164,13 @@
                                 <div class="space-y-2">
                                     <label
                                         class="mono text-[10px] uppercase text-gray-500 tracking-widest">Return_Path</label>
-                                    <input type="email" placeholder="Email Address"
+                                    <input name="email" type="email" placeholder="Email Address"
                                         class="w-full bg-black/40 border border-white/10 rounded-sm px-4 py-3.5 text-white focus:border-cyan-500/50 focus:outline-none transition-all placeholder:text-gray-800">
                                 </div>
                                 <div class="space-y-2">
                                     <label
                                         class="mono text-[10px] uppercase text-gray-500 tracking-widest">Build_Category</label>
-                                    <select
+                                    <select name="category"
                                         class="w-full bg-black/40 border border-white/10 rounded-sm px-4 py-3.5 text-white focus:border-cyan-500/50 focus:outline-none transition-all appearance-none">
                                         <option>Landing_Website</option>
                                         <option>Corporate_Website</option>
@@ -164,7 +184,8 @@
                             <div class="space-y-2">
                                 <label
                                     class="mono text-[10px] uppercase text-gray-500 tracking-widest">Requirements_Payload</label>
-                                <textarea rows="5" placeholder="List your technical requirements and objectives..."
+                                <textarea name="requirements" rows="5"
+                                    placeholder="List your technical requirements and objectives..."
                                     class="w-full bg-black/40 border border-white/10 rounded-sm px-4 py-3.5 text-white focus:border-cyan-500/50 focus:outline-none transition-all resize-none placeholder:text-gray-800"></textarea>
                             </div>
 
@@ -202,7 +223,7 @@
                                         <p class="mono text-[10px] uppercase text-gray-500 tracking-tighter">Email_Link
                                         </p>
                                         <a href="mailto:support@extechstudio.xyz"
-                                            class="text-white font-bold hover:text-cyan-400 transition-colors">support@extechstudio.xyz</a>
+                                            class="text-white font-bold hover:text-cyan-400 transition-colors">cs.extechstudio@gmail.com</a>
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-5">
@@ -255,6 +276,55 @@
 
     <div id="site-footer"></div>
     <script src="/js/main.js"></script>
+
+    <script>
+        (function () {
+            const form = document.getElementById('contactWhatsAppForm');
+            if (!form) return;
+
+            // ✅ 你要接收消息的 WhatsApp（不带 +，不带空格）
+            const WHATSAPP_TO = '601156898898';
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const fullName = (form.full_name?.value || '').trim();
+                const phone = (form.phone?.value || '').trim();
+                const email = (form.email?.value || '').trim();
+                const category = (form.category?.value || '').trim();
+                const requirements = (form.requirements?.value || '').trim();
+
+                // 可选：简单必填检查（你也可以改成只检查 email）
+                if (!fullName || !email || !category || !requirements) {
+                    alert('Please fill in Full Name, Email, Category, and Requirements.');
+                    return;
+                }
+
+                const message = `
+*NEW PROJECT REQUEST*
+
+*Client Identity*
+Name: ${fullName}
+WhatsApp: +60 ${phone || '-'}
+Email: ${email}
+
+*Project Scope*
+Category: ${category}
+
+*Requirements Payload*
+"${requirements}"
+
+Sent via extechstudio.xyz
+`.trim();
+
+                const url = `https://wa.me/${WHATSAPP_TO}?text=${encodeURIComponent(message)}`;
+
+                // 新窗口打开（手机会自动跳 WhatsApp，电脑会开 web.whatsapp）
+                window.open(url, '_blank');
+            });
+        })();
+    </script>
+
 </body>
 
 </html>

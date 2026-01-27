@@ -151,3 +151,22 @@ function bindMobileNav() {
     if (e.key === "Escape") close();
   });
 }
+
+/* =========================
+   Move to Top button
+========================= */
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    scrollTopBtn.classList.remove("opacity-0", "pointer-events-none");
+    scrollTopBtn.classList.add("opacity-100");
+  } else {
+    scrollTopBtn.classList.add("opacity-0", "pointer-events-none");
+    scrollTopBtn.classList.remove("opacity-100");
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

@@ -28,7 +28,7 @@
         <!-- Content -->
         <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tight z-10 reveal-left">
             NEXT-GEN <br>
-            <span class="text-transparent bg-clip-text tech-gradient">SOLUTIONS.</span>
+            <span class="text-transparent bg-clip-text tech-gradient">SOLUTIONS</span>
         </h1>
 
         <p class="max-w-2xl text-gray-300 mb-8 z-10 text-lg reveal-right" style="transition-delay:120ms;">
@@ -36,28 +36,30 @@
             designed for real-world business growth.
         </p>
 
-        <div class="z-10 flex flex-wrap items-center gap-4 reveal-right" style="transition-delay:220ms;">
+        <div class="z-10 w-full flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 reveal-right"
+            style="transition-delay:220ms;">
 
             <!-- Primary -->
-            <a href="/contact.html" class="group inline-flex items-center gap-3
-        bg-cyan-500/90 hover:bg-cyan-400
-        text-black font-black uppercase tracking-widest text-[11px]
-        px-8 py-3 transition-all">
-
+            <a href="/contact.html" class="group inline-flex items-center justify-center gap-3
+            w-full max-w-[260px] sm:w-auto
+            bg-cyan-500/90 hover:bg-cyan-400
+            text-black font-black uppercase tracking-widest text-[11px]
+            px-8 py-3 transition-all">
                 Start Project
             </a>
 
             <!-- Secondary -->
-            <a href="/portfolio.html" class="group inline-flex items-center gap-3
-        border border-white/30 hover:border-white
-        text-white font-black uppercase tracking-widest text-[11px]
-        px-8 py-3 transition-all">
-
+            <a href="/portfolio.html" class="group inline-flex items-center justify-center gap-3
+            w-full max-w-[260px] sm:w-auto
+            border border-white/30 hover:border-white
+            text-white font-black uppercase tracking-widest text-[11px]
+            px-8 py-3 transition-all">
                 View Work
                 <span class="opacity-60 group-hover:opacity-100 transition-opacity">↗</span>
             </a>
 
         </div>
+
     </section>
 
 
@@ -114,14 +116,13 @@
                     </span>
                 </div>
 
-                <!-- View More -->
-                <a href="services.html" class="mono text-sm uppercase tracking-widest text-cyan-400
-              hover:text-cyan-300 transition flex items-center gap-2">
+                <!-- View More (Desktop only) -->
+                <a href="services.html" class="hidden md:flex mono text-sm uppercase tracking-widest text-cyan-400
+              hover:text-cyan-300 transition items-center gap-2">
                     View More
                     <span class="transition group-hover:translate-x-1">→</span>
                 </a>
             </div>
-
 
             <div class="grid md:grid-cols-3 gap-8 mt-12">
 
@@ -180,6 +181,17 @@
                 </div>
 
             </div>
+
+            <!-- View More (Mobile only) -->
+            <div class="mt-12 flex justify-center md:hidden">
+                <a href="services.html" class="mono text-xs uppercase tracking-widest
+              text-cyan-400 hover:text-cyan-300
+              flex items-center gap-2 transition">
+                    View More
+                    <span>→</span>
+                </a>
+            </div>
+
         </div>
     </section>
 
@@ -197,9 +209,9 @@
                     </h2>
                 </div>
 
-                <!-- View More -->
-                <a href="portfolio.html" class="mono text-sm uppercase tracking-widest text-cyan-400
-              hover:text-cyan-300 transition flex items-center gap-2">
+                <!-- View More (Desktop only) -->
+                <a href="portfolio.html" class="hidden md:flex mono text-sm uppercase tracking-widest text-cyan-400
+              hover:text-cyan-300 transition items-center gap-2">
                     View More
                     <span class="transition group-hover:translate-x-1">→</span>
                 </a>
@@ -233,6 +245,16 @@
                         </h3>
                     </div>
                 </div>
+            </div>
+
+            <!-- View More (Mobile only) -->
+            <div class="mt-12 flex justify-center md:hidden">
+                <a href="services.html" class="mono text-xs uppercase tracking-widest
+              text-cyan-400 hover:text-cyan-300
+              flex items-center gap-2 transition">
+                    View More
+                    <span>→</span>
+                </a>
             </div>
         </div>
     </section>
@@ -420,14 +442,14 @@
 
                     <div class="flex flex-col sm:flex-row items-center justify-center
                            gap-4 relative z-10">
-                        <a href="mailto:hello@extechstudio.com" class="group relative px-8 py-4 bg-cyan-500 text-black
+                        <a href="contact.html" class="group relative px-8 py-4 bg-cyan-500 text-black
                                font-extrabold uppercase tracking-widest text-xs
                                rounded-sm transition-all hover:scale-105 active:scale-95
                                shadow-[0_0_18px_rgba(6,182,212,0.35)]">
                             Launch Project
                         </a>
 
-                        <a href="#portfolio" class="px-8 py-4 border border-white/10 text-white
+                        <a href="portfolio.html" class="px-8 py-4 border border-white/10 text-white
                                font-bold uppercase tracking-widest text-xs rounded-sm
                                hover:bg-white/5 transition-all">
                             Review Work
@@ -446,6 +468,22 @@
     </section>
 
     <div id="site-footer"></div>
+
+    <button id="scrollTopBtn" aria-label="Back to top" class="fixed bottom-24 right-6 z-50
+         w-10 h-10 rounded-sm
+         bg-cyan-500/90 text-black
+         flex items-center justify-center
+         opacity-0 pointer-events-none
+         transition-all duration-300
+         hover:bg-cyan-400
+         shadow-[0_0_20px_rgba(6,182,212,0.4)]">
+
+        <!-- Arrow icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
 
     <script src="/js/main.js"></script>
 

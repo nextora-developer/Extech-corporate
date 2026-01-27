@@ -1,13 +1,13 @@
 <nav class="fixed w-full z-50 glass h-16 md:h-auto py-4 px-8 flex justify-between items-center">
+    <!-- Brand -->
     <a href="/index.html" class="text-2xl font-bold tracking-tighter text-white
-          absolute left-1/2 -translate-x-1/2
-          md:static md:translate-x-0
-          hover:opacity-90 transition">
-
+            absolute left-1/2 -translate-x-1/2
+            md:static md:translate-x-0
+            hover:opacity-90 transition">
         EXTECH<span class="text-cyan-400">STUDIO</span>
     </a>
 
-
+    <!-- Desktop Nav -->
     <div class="hidden md:flex space-x-8 mono text-sm uppercase tracking-widest items-center">
         <a href="/index.html" data-nav>Home</a>
         <a href="/about.html" data-nav>About</a>
@@ -16,5 +16,49 @@
         <a href="/contact.html" class="px-4 py-2 bg-cyan-500 text-black rounded-sm font-bold">
             Contact
         </a>
+    </div>
+
+    <!-- Mobile: Hamburger -->
+    <button id="navToggle" aria-label="Open menu" aria-expanded="false" class="md:hidden ml-auto w-10 h-10 grid place-items-center rounded-xl
+           hover:bg-white/5 active:scale-95 transition relative z-[60]">
+        <!-- Icon -->
+        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16" />
+            <path d="M4 12h16" />
+            <path d="M4 18h16" />
+        </svg>
+    </button>
+
+    <!-- Mobile: Overlay -->
+    <div id="navOverlay"
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-200 z-[55]">
+    </div>
+
+    <!-- Mobile: Drawer -->
+    <div id="navDrawer" class="fixed top-0 right-0 h-dvh w-[78%] max-w-sm
+              bg-[#0a0a0a]/90 border-l border-white/10
+              translate-x-full transition-transform duration-300 z-[56]
+              pt-20 px-6">
+        <div class="mono text-[11px] uppercase tracking-[0.35em] text-cyan-400/80 mb-6">
+            Navigation
+        </div>
+
+        <div class="flex flex-col gap-3 text-white">
+            <a href="/index.html" data-nav class="py-3 px-4 rounded-xl hover:bg-white/5 transition">Home</a>
+            <a href="/about.html" data-nav class="py-3 px-4 rounded-xl hover:bg-white/5 transition">About</a>
+            <a href="/services.html" data-nav class="py-3 px-4 rounded-xl hover:bg-white/5 transition">Services</a>
+            <a href="/portfolio.html" data-nav class="py-3 px-4 rounded-xl hover:bg-white/5 transition">Portfolio</a>
+
+            <a href="/contact.html" class="mt-2 py-3 px-4 bg-cyan-500 text-black rounded-xl font-bold text-center">
+                Contact
+            </a>
+        </div>
+
+        <div class="mt-8 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+        <p class="mt-6 text-xs text-gray-400 leading-relaxed">
+            Extech Studio — Engineering the Future.
+        </p>
     </div>
 </nav>
